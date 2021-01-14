@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Image, Fade, useDisclosure, Box } from "@chakra-ui/react";
 import "./styles.css";
 
@@ -7,7 +7,7 @@ const Card = (props) => {
   const { imageUrl, id } = props;
   return (
     <div className="fade">
-      <Fade  onClick={onToggle} in={isOpen}>
+      <Fade onClick={onToggle} in={isOpen}>
         <Image src={imageUrl} />
       </Fade>
     </div>

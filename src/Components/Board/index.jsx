@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { SimpleGrid, Box, Image } from "@chakra-ui/react";
+import { SimpleGrid } from "@chakra-ui/react";
 import Card from "../Card";
 import "./styles.css";
 
@@ -9,10 +9,16 @@ const Board = () => {
 
   for (let index = 1; index <= parejas; index++) {
     Cards.push(
-      <Card imageUrl={`https://picsum.photos/id/${index}${index}/600/800`} id={index}/>
+      <Card
+        imageUrl={`https://picsum.photos/id/${index}${index}/600/800`}
+        id={index}
+      />
     );
     Cards.push(
-      <Card imageUrl={`https://picsum.photos/id/${index}${index}/600/800`} id={-index}/>
+      <Card
+        imageUrl={`https://picsum.photos/id/${index}${index}/600/800`}
+        id={-index}
+      />
     );
   }
 

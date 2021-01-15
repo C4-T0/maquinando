@@ -7,7 +7,7 @@ import Menu from "./Components/Menu";
 function App() {
   return (
     <ChakraProvider>
-      <div className="App">
+      <div className="App">     
         <Menu />
         <Board />
       </div>
